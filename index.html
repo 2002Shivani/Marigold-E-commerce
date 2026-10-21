@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Marigold – Considered shopping</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="strip"><div class="wrap">
+  <span>Free delivery on orders above ₹499 · 7-day easy returns</span>
+  <nav><a href="#">Sell on Marigold</a><a href="#">Track order</a><a href="#">Help</a></nav>
+</div></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#"><i></i>marigold</a>
+    <form class="search" role="search" onsubmit="return false">
+      <select id="catSelect" aria-label="Category"><option value="all">All</option><option value="electronics">Electronics</option><option value="fashion">Fashion</option><option value="home">Home</option></select>
+      <input type="search" placeholder="Search for products, brands and more" aria-label="Search">
+      <button type="submit">Search</button>
+    </form>
+    <div class="acts">
+      <a href="#">👤 <span><small>Hello</small>Sign in</span></a>
+      <a href="#" id="wishBtn" aria-label="Saved items">♡ <span class="badge" id="wishCount" hidden>0</span></a>
+      <a href="#" id="cartBtn" aria-label="Open cart">🛍 <span class="badge" id="cartCount" hidden>0</span></a>
+    </div>
+  </div>
+  <div class="cats"><div class="wrap">
+    <a class="on" href="#" data-filter="all">All</a><a href="#" data-filter="electronics">Electronics</a><a href="#" data-filter="fashion">Fashion</a><a href="#" data-filter="home">Home &amp; kitchen</a><a href="#" data-filter="beauty">Beauty</a><a href="#" data-filter="sports">Sports</a><a href="#" data-filter="books">Books</a><a href="#" data-filter="toys">Toys</a><a class="hot" href="#" data-filter="deals">Today’s deals</a>
+  </div></div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="feature">
+      <h1>Better things, delivered properly.</h1>
+      <p>Every seller is verified, every product is photographed as it ships, and returns take one tap.</p>
+      <div class="btns"><a class="btn" href="#new">Shop new arrivals</a><a class="btn ghost" href="#new" data-filter="deals">See today’s deals</a></div>
+      <div class="art" aria-hidden="true">🎧</div>
+    </div>
+    <div class="side">
+      <a class="tile t1" href="#"><em>⌚</em><span>Up to 40% off</span><b>Smartwatches &amp; wearables</b></a>
+      <a class="tile t2" href="#"><em>🪴</em><span>From ₹299</span><b>Refresh your home</b></a>
+    </div>
+  </div>
+
+  <div class="trust">
+    <div><span>🚚</span><p style="margin:0"><b>Delivery in 2 days</b><small>To 19,000+ pin codes</small></p></div>
+    <div><span>↩</span><p style="margin:0"><b>7-day returns</b><small>Pickup from your door</small></p></div>
+    <div><span>🛡</span><p style="margin:0"><b>Verified sellers</b><small>Every listing reviewed</small></p></div>
+    <div><span>💳</span><p style="margin:0"><b>Secure payments</b><small>UPI, cards, EMI, COD</small></p></div>
+  </div>
+
+  <section>
+    <div class="head"><h2>Shop by category</h2><a href="#">View all</a></div>
+    <div class="cgrid">
+      <a class="cat" href="#" data-filter="electronics"><i>📱</i>Mobiles</a><a class="cat" href="#" data-filter="fashion"><i>👕</i>Fashion</a><a class="cat" href="#" data-filter="home"><i>🛋</i>Furniture</a>
+      <a class="cat" href="#" data-filter="beauty"><i>💄</i>Beauty</a><a class="cat" href="#" data-filter="sports"><i>🏏</i>Sports</a><a class="cat" href="#" data-filter="books"><i>📚</i>Books</a>
+    </div>
+  </section>
+
+  <div class="deal" id="deals">
+    <div><h3>Deal of the day</h3><p>Prices drop at midnight. Stock is limited.</p></div>
+    <div class="clock" role="timer"><div><span id="hh">08</span><small>HRS</small></div><div><span id="mm">42</span><small>MIN</small></div><div><span id="ss">15</span><small>SEC</small></div></div>
+    <a class="btn" href="#new" data-filter="deals">Shop deals</a>
+  </div>
+
+  <section id="new">
+    <div class="head"><h2 id="productsTitle">Picked for you</h2><select class="sort" id="sortSel" aria-label="Sort products"><option value="rel">Sort: Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="off">Biggest discount</option><option value="rate">Top rated</option></select></div>
+    <div class="pgrid">
+      <article class="card" data-id="p1" data-cat="electronics"><div class="pic g1">🎧<span class="tag">32% off</span><button class="heart" aria-label="Save">♡</button></div>
+        <div class="info"><span class="brandn">Sonora</span><h4>Wireless noise-cancelling headphones, 40h battery</h4>
+        <div class="rate"><b>4.6 ★</b>12,480 ratings</div>
+        <div class="price"><b>₹4,499</b><s>₹6,599</s><u>32% off</u></div><button class="add">Add to cart</button></div></article>
+
+      <article class="card" data-id="p2" data-cat="electronics"><div class="pic g2">⌚<span class="tag new">New</span><button class="heart" aria-label="Save">♡</button></div>
+        <div class="info"><span class="brandn">Pulse</span><h4>Fitness smartwatch with AMOLED display and GPS</h4>
+        <div class="rate"><b>4.4 ★</b>8,215 ratings</div>
+        <div class="price"><b>₹3,299</b><s>₹4,999</s><u>34% off</u></div><button class="add">Add to cart</button></div></article>
+
+      <article class="card" data-id="p3" data-cat="fashion"><div class="pic g3">👟<button class="heart" aria-label="Save">♡</button></div>
+        <div class="info"><span class="brandn">Stride</span><h4>Lightweight running shoes, breathable mesh</h4>
+        <div class="rate"><b>4.3 ★</b>5,902 ratings</div>
+        <div class="price"><b>₹1,899</b><s>₹3,200</s><u>41% off</u></div><button class="add">Add to cart</button></div></article>
+
+      <article class="card" data-id="p4" data-cat="home"><div class="pic g4">☕<span class="tag">Bestseller</span><button class="heart" aria-label="Save">♡</button></div>
+        <div class="info"><span class="brandn">Hearth &amp; Co.</span><h4>Ceramic coffee set, 2 cups with wooden tray</h4>
+        <div class="rate"><b>4.7 ★</b>2,340 ratings</div>
+        <div class="price"><b>₹799</b><s>₹1,199</s><u>33% off</u></div><button class="add">Add to cart</button></div></article>
+
+      <article class="card" data-id="p5" data-cat="home"><div class="pic g5">🪴<button class="heart" aria-label="Save">♡</button></div>
+        <div class="info"><span class="brandn">Leaflet</span><h4>Indoor plant with handmade terracotta pot</h4>
+        <div class="rate"><b>4.5 ★</b>1,118 ratings</div>
+        <div class="price"><b>₹349</b><s>₹499</s><u>30% off</u></div><button class="add">Add to cart</button></div></article>
+
+      <article class="card" data-id="p6" data-cat="electronics"><div class="pic g6">📷<span class="tag new">New</span><button class="heart" aria-label="Save">♡</button></div>
+        <div class="info"><span class="brandn">Lumen</span><h4>Mirrorless camera, 24MP with 18–55mm lens</h4>
+        <div class="rate"><b>4.8 ★</b>964 ratings</div>
+        <div class="price"><b>₹42,990</b><s>₹49,990</s><u>14% off</u></div><button class="add">Add to cart</button></div></article>
+
+      <article class="card" data-id="p7" data-cat="fashion"><div class="pic g1">🎒<button class="heart" aria-label="Save">♡</button></div>
+        <div class="info"><span class="brandn">Trailmade</span><h4>35L water-resistant laptop backpack</h4>
+        <div class="rate"><b>4.4 ★</b>7,031 ratings</div>
+        <div class="price"><b>₹1,249</b><s>₹2,499</s><u>50% off</u></div><button class="add">Add to cart</button></div></article>
+
+      <article class="card" data-id="p8" data-cat="home"><div class="pic g2">💡<span class="tag">Deal</span><button class="heart" aria-label="Save">♡</button></div>
+        <div class="info"><span class="brandn">Glow</span><h4>Smart LED bulb, 16M colours, app and voice control</h4>
+        <div class="rate"><b>4.2 ★</b>15,660 ratings</div>
+        <div class="price"><b>₹549</b><s>₹999</s><u>45% off</u></div><button class="add">Add to cart</button></div></article>
+    </div>
+  </section>
+
+  <div class="promos">
+    <div class="promo p1"><div><h3>Sell with Marigold</h3><p>Reach millions of buyers. Zero listing fees for 90 days.</p><a class="btn" href="#">Start selling</a></div><em aria-hidden="true">📦</em></div>
+    <div class="promo p2"><div><h3>Marigold Plus</h3><p>Free delivery on every order and early access to sales.</p><a class="btn" href="#">Join for ₹299/year</a></div><em aria-hidden="true">⭐</em></div>
+  </div>
+
+  <div class="news">
+    <div><h3>Get the week’s best deals</h3><p>One email on Fridays. Unsubscribe anytime.</p></div>
+    <form onsubmit="return false"><input type="email" placeholder="you@example.com" aria-label="Email address"><button>Subscribe</button></form>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><a class="logo" href="#"><i></i>marigold</a><p>A marketplace built around verified sellers, honest photos and fast, easy returns.</p></div>
+    <div><h5>Shop</h5><a href="#">Electronics</a><a href="#">Fashion</a><a href="#">Home &amp; kitchen</a><a href="#">Today’s deals</a></div>
+    <div><h5>Help</h5><a href="#">Track your order</a><a href="#">Returns &amp; refunds</a><a href="#">Payments</a><a href="#">Contact us</a></div>
+    <div><h5>Company</h5><a href="#">About Marigold</a><a href="#">Careers</a><a href="#">Sell with us</a><a href="#">Privacy policy</a></div>
+  </div>
+  <div class="copy"><span>© 2026 Marigold Retail Pvt. Ltd.</span><span>Made in Hyderabad</span></div>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
